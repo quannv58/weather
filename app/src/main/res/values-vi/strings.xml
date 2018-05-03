@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">WeatherProject</string>
+  <string name="hello_blank_fragment">Xin Chào</string>
+  <string name="location">"Toạ độ: "</string>
+  <string name="wheather">"Thời tiết: "</string>
+  <string name="temperature">"Nhiệt độ: "</string>
+  <string name="error_system_upgrading">Thông báo lỗi</string>
+  <string name="list_weather">Danh sách</string>
+  <string name="weather_detail">Chi tiết</string>
+  <string name="humidity">Độ ẩm:</string>
+  <string name="country">"Đất nước: "</string>
+  <string name="weather_app">Thời tiết</string>
+  <string name="production_version">Bản production</string>
+  <string name="develop_version">Bản develop</string>
+  <string name="test_version">Bản test</string>
+  <string name="your_location">Địa điểm của bạn</string>
+  <string name="permissin_denied">Quyền bị từ chối</string>
+  <string name="no_network">Không có kết nối mạng</string>
+</resources>

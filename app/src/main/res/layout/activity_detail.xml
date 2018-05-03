@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@drawable/test_bg">
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="12dp"
+      android:layout_centerVertical="true"
+      android:id="@+id/detail_back_btn"
+      android:src="@drawable/ic_back"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18sp"
+      android:text="@string/weather_detail"
+      android:textColor="@color/white"
+      android:layout_centerInParent="true"/>
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="12dp"
+      android:layout_centerVertical="true"
+      android:id="@+id/detail_refresh_btn"
+      android:src="@drawable/ic_refresh"
+      android:layout_alignParentRight="true"/>
+  </RelativeLayout>
+
+  <ImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_marginTop="12dp"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/detail_weather_img"
+    android:src="@drawable/default_img"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="24dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="14sp"
+      android:textColor="@color/text_title"
+      android:text="@string/country"/>
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:lines="1"
+      android:layout_marginLeft="12dp"
+      android:id="@+id/detail_country_tv"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="14sp"
+      android:textColor="@color/text_title"
+      android:text="@string/location"/>
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:lines="1"
+      android:layout_marginLeft="12dp"
+      android:id="@+id/detail_location_tv"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="14sp"
+      android:textColor="@color/text_title"
+      android:text="@string/wheather"/>
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:lines="1"
+      android:layout_marginLeft="12dp"
+      android:id="@+id/detail_wheather_tv"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="14sp"
+      android:textColor="@color/text_title"
+      android:text="@string/temperature"/>
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:lines="1"
+      android:layout_marginLeft="12dp"
+      android:id="@+id/detail_temperature_tv"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="14sp"
+      android:textColor="@color/text_title"
+      android:text="@string/humidity"/>
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:lines="1"
+      android:layout_marginLeft="12dp"
+      android:id="@+id/detail_humidity_tv"/>
+  </LinearLayout>
+</LinearLayout>

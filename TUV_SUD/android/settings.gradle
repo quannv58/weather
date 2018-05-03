@@ -1,0 +1,3 @@
+rootProject.name = 'TUV_SUD'
+
+include ':app'

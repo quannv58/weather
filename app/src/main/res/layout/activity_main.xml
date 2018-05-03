@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@drawable/test_bg">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18sp"
+      android:text="@string/list_weather"
+      android:textColor="@color/white"
+      android:layout_centerInParent="true"/>
+
+    <FrameLayout
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="12dp"
+      android:layout_centerVertical="true"
+      android:id="@+id/main_refresh_layout"/>
+  </RelativeLayout>
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_list_layout"/>
+
+</LinearLayout>
