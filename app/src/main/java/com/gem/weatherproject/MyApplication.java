@@ -2,8 +2,10 @@ package com.gem.weatherproject;
 
 import android.app.Application;
 
+import com.crashlytics.android.Crashlytics;
 import com.gem.weatherproject.realm.MyRealm;
 
+import io.fabric.sdk.android.Fabric;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
@@ -15,6 +17,7 @@ public class MyApplication extends Application {
   @Override
   public void onCreate() {
     super.onCreate();
+    Fabric.with(this, new Crashlytics());
     Realm.init(this);
     RealmConfiguration realmConfiguration = new RealmConfiguration.Builder()
         .name(Realm.DEFAULT_REALM_NAME)
@@ -24,9 +27,5 @@ public class MyApplication extends Application {
         .migration(new MyRealm())
         .build();
     Realm.setDefaultConfiguration(realmConfiguration);
-
-//    if(BuildConfig.FLAVOR == "production") {
-//      Fabric.with(this, new Crashlytics());
-//    }
   }
 }
